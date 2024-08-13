@@ -62,5 +62,29 @@ namespace RestaurantTrackerWinForm
                 dataGridView1.DataSource = table;
             }
         }
+
+        private void deleteButton_Click(object sender, EventArgs e)
+        {
+            if (dataGridView1.SelectedRows.Count > 0)
+            {
+                int restuarantID = Convert.ToInt32(dataGridView1.SelectedRows[0].Cells["RestaurantID"].Value);
+                using (SqlConnection connection = new SqlConnection(connectionString))
+                {
+                    string query = "DELETE FROM Restaurants WHERE RestaurantID = @RestuarantID";
+                    SqlCommand command = new SqlCommand(query, connection);
+                    command.Parameters.AddWithValue("@RestuarantID", restuarantID);
+
+                    connection.Open();
+                    command.ExecuteNonQuery();
+                    connection.Close();
+
+                    LoadData();
+                }
+            }
+            else
+            {
+                MessageBox.Show("Please select a row to delete.");
+            }
+        }
     }
 }

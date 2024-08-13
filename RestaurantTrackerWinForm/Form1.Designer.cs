@@ -264,6 +264,7 @@
             this.deleteButton.TabIndex = 19;
             this.deleteButton.Text = "Delete";
             this.deleteButton.UseVisualStyleBackColor = true;
+            this.deleteButton.Click += new System.EventHandler(this.deleteButton_Click);
             // 
             // panel1
             // 
@@ -318,6 +319,13 @@
             this.label8.Size = new System.Drawing.Size(268, 37);
             this.label8.TabIndex = 18;
             this.label8.Text = "Restaurant Name";
+            // 
+            // saveButton
+            // 
+            this.saveButton.Location = new System.Drawing.Point(0, 0);
+            this.saveButton.Name = "saveButton";
+            this.saveButton.Size = new System.Drawing.Size(75, 23);
+            this.saveButton.TabIndex = 0;
             // 
             // Form1
             // 

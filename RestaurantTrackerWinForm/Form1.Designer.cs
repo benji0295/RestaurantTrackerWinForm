@@ -28,6 +28,9 @@
         /// </summary>
         private void InitializeComponent()
         {
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle7 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle8 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle9 = new System.Windows.Forms.DataGridViewCellStyle();
             this.dataGridView1 = new System.Windows.Forms.DataGridView();
             this.label1 = new System.Windows.Forms.Label();
             this.nameTextBox = new System.Windows.Forms.TextBox();
@@ -47,7 +50,6 @@
             this.ratingNumericUpDown = new System.Windows.Forms.NumericUpDown();
             this.beenThereCheckBox = new System.Windows.Forms.CheckBox();
             this.label8 = new System.Windows.Forms.Label();
-            this.saveButton = new System.Windows.Forms.Button();
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).BeginInit();
             this.panel1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.ratingNumericUpDown)).BeginInit();
@@ -58,27 +60,57 @@
             this.dataGridView1.AllowUserToAddRows = false;
             this.dataGridView1.AllowUserToDeleteRows = false;
             this.dataGridView1.AutoSizeColumnsMode = System.Windows.Forms.DataGridViewAutoSizeColumnsMode.Fill;
+            this.dataGridView1.BackgroundColor = System.Drawing.Color.FromArgb(((int)(((byte)(211)))), ((int)(((byte)(217)))), ((int)(((byte)(212)))));
+            dataGridViewCellStyle7.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleCenter;
+            dataGridViewCellStyle7.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(116)))), ((int)(((byte)(141)))), ((int)(((byte)(146)))));
+            dataGridViewCellStyle7.Font = new System.Drawing.Font("Microsoft Sans Serif", 7.875F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            dataGridViewCellStyle7.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(211)))), ((int)(((byte)(217)))), ((int)(((byte)(212)))));
+            dataGridViewCellStyle7.SelectionBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(211)))), ((int)(((byte)(217)))), ((int)(((byte)(212)))));
+            dataGridViewCellStyle7.SelectionForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(116)))), ((int)(((byte)(141)))), ((int)(((byte)(146)))));
+            dataGridViewCellStyle7.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
+            this.dataGridView1.ColumnHeadersDefaultCellStyle = dataGridViewCellStyle7;
             this.dataGridView1.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            this.dataGridView1.Location = new System.Drawing.Point(714, 22);
+            dataGridViewCellStyle8.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
+            dataGridViewCellStyle8.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(116)))), ((int)(((byte)(141)))), ((int)(((byte)(146)))));
+            dataGridViewCellStyle8.Font = new System.Drawing.Font("Microsoft Sans Serif", 7.875F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            dataGridViewCellStyle8.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(211)))), ((int)(((byte)(217)))), ((int)(((byte)(212)))));
+            dataGridViewCellStyle8.SelectionBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(211)))), ((int)(((byte)(217)))), ((int)(((byte)(212)))));
+            dataGridViewCellStyle8.SelectionForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(116)))), ((int)(((byte)(141)))), ((int)(((byte)(146)))));
+            dataGridViewCellStyle8.WrapMode = System.Windows.Forms.DataGridViewTriState.False;
+            this.dataGridView1.DefaultCellStyle = dataGridViewCellStyle8;
+            this.dataGridView1.GridColor = System.Drawing.Color.FromArgb(((int)(((byte)(116)))), ((int)(((byte)(141)))), ((int)(((byte)(146)))));
+            this.dataGridView1.Location = new System.Drawing.Point(728, 22);
             this.dataGridView1.Name = "dataGridView1";
             this.dataGridView1.ReadOnly = true;
+            dataGridViewCellStyle9.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
+            dataGridViewCellStyle9.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(116)))), ((int)(((byte)(141)))), ((int)(((byte)(146)))));
+            dataGridViewCellStyle9.Font = new System.Drawing.Font("Microsoft Sans Serif", 7.875F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            dataGridViewCellStyle9.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(211)))), ((int)(((byte)(217)))), ((int)(((byte)(212)))));
+            dataGridViewCellStyle9.SelectionBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(211)))), ((int)(((byte)(217)))), ((int)(((byte)(212)))));
+            dataGridViewCellStyle9.SelectionForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(116)))), ((int)(((byte)(141)))), ((int)(((byte)(146)))));
+            dataGridViewCellStyle9.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
+            this.dataGridView1.RowHeadersDefaultCellStyle = dataGridViewCellStyle9;
+            this.dataGridView1.RowHeadersVisible = false;
             this.dataGridView1.RowHeadersWidth = 50;
             this.dataGridView1.RowTemplate.Height = 33;
+            this.dataGridView1.SelectionMode = System.Windows.Forms.DataGridViewSelectionMode.FullRowSelect;
             this.dataGridView1.Size = new System.Drawing.Size(1453, 927);
             this.dataGridView1.TabIndex = 0;
             // 
             // label1
             // 
             this.label1.AutoSize = true;
-            this.label1.Font = new System.Drawing.Font("Microsoft Sans Serif", 28F);
+            this.label1.Font = new System.Drawing.Font("Microsoft Sans Serif", 28.125F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label1.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(211)))), ((int)(((byte)(217)))), ((int)(((byte)(212)))));
             this.label1.Location = new System.Drawing.Point(54, 23);
             this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(576, 85);
+            this.label1.Size = new System.Drawing.Size(590, 85);
             this.label1.TabIndex = 1;
             this.label1.Text = "New Restaurant";
             // 
             // nameTextBox
             // 
+            this.nameTextBox.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(211)))), ((int)(((byte)(217)))), ((int)(((byte)(212)))));
             this.nameTextBox.Location = new System.Drawing.Point(277, 147);
             this.nameTextBox.Name = "nameTextBox";
             this.nameTextBox.Size = new System.Drawing.Size(353, 31);
@@ -86,6 +118,7 @@
             // 
             // cityTextBox
             // 
+            this.cityTextBox.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(211)))), ((int)(((byte)(217)))), ((int)(((byte)(212)))));
             this.cityTextBox.Location = new System.Drawing.Point(277, 367);
             this.cityTextBox.Name = "cityTextBox";
             this.cityTextBox.Size = new System.Drawing.Size(353, 31);
@@ -105,6 +138,7 @@
             // 
             this.label3.AutoSize = true;
             this.label3.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F);
+            this.label3.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(211)))), ((int)(((byte)(217)))), ((int)(((byte)(212)))));
             this.label3.Location = new System.Drawing.Point(148, 255);
             this.label3.Name = "label3";
             this.label3.Size = new System.Drawing.Size(123, 37);
@@ -113,6 +147,7 @@
             // 
             // cuisineComboBox
             // 
+            this.cuisineComboBox.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(211)))), ((int)(((byte)(217)))), ((int)(((byte)(212)))));
             this.cuisineComboBox.FormattingEnabled = true;
             this.cuisineComboBox.Items.AddRange(new object[] {
             "American",
@@ -138,6 +173,7 @@
             // 
             this.label4.AutoSize = true;
             this.label4.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F);
+            this.label4.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(211)))), ((int)(((byte)(217)))), ((int)(((byte)(212)))));
             this.label4.Location = new System.Drawing.Point(200, 367);
             this.label4.Name = "label4";
             this.label4.Size = new System.Drawing.Size(71, 37);
@@ -148,6 +184,7 @@
             // 
             this.stateComboBox.AutoCompleteMode = System.Windows.Forms.AutoCompleteMode.SuggestAppend;
             this.stateComboBox.AutoCompleteSource = System.Windows.Forms.AutoCompleteSource.ListItems;
+            this.stateComboBox.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(211)))), ((int)(((byte)(217)))), ((int)(((byte)(212)))));
             this.stateComboBox.DropDownHeight = 100;
             this.stateComboBox.FormattingEnabled = true;
             this.stateComboBox.IntegralHeight = false;
@@ -211,6 +248,7 @@
             // 
             this.label5.AutoSize = true;
             this.label5.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F);
+            this.label5.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(211)))), ((int)(((byte)(217)))), ((int)(((byte)(212)))));
             this.label5.Location = new System.Drawing.Point(180, 487);
             this.label5.Name = "label5";
             this.label5.Size = new System.Drawing.Size(91, 37);
@@ -221,6 +259,7 @@
             // 
             this.label6.AutoSize = true;
             this.label6.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F);
+            this.label6.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(211)))), ((int)(((byte)(217)))), ((int)(((byte)(212)))));
             this.label6.Location = new System.Drawing.Point(162, 710);
             this.label6.Name = "label6";
             this.label6.Size = new System.Drawing.Size(109, 37);
@@ -231,6 +270,7 @@
             // 
             this.label7.AutoSize = true;
             this.label7.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F);
+            this.label7.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(211)))), ((int)(((byte)(217)))), ((int)(((byte)(212)))));
             this.label7.Location = new System.Drawing.Point(89, 600);
             this.label7.Name = "label7";
             this.label7.Size = new System.Drawing.Size(182, 37);
@@ -239,36 +279,45 @@
             // 
             // addButton
             // 
-            this.addButton.Location = new System.Drawing.Point(246, 824);
+            this.addButton.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(211)))), ((int)(((byte)(217)))), ((int)(((byte)(212)))));
+            this.addButton.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.addButton.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(116)))), ((int)(((byte)(141)))), ((int)(((byte)(146)))));
+            this.addButton.Location = new System.Drawing.Point(246, 808);
             this.addButton.Name = "addButton";
-            this.addButton.Size = new System.Drawing.Size(132, 77);
+            this.addButton.Size = new System.Drawing.Size(189, 93);
             this.addButton.TabIndex = 17;
             this.addButton.Text = "Add";
-            this.addButton.UseVisualStyleBackColor = true;
+            this.addButton.UseVisualStyleBackColor = false;
             this.addButton.Click += new System.EventHandler(this.addButton_Click);
             // 
             // searchButton
             // 
-            this.searchButton.Location = new System.Drawing.Point(1208, 976);
+            this.searchButton.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(116)))), ((int)(((byte)(141)))), ((int)(((byte)(146)))));
+            this.searchButton.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.searchButton.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(211)))), ((int)(((byte)(217)))), ((int)(((byte)(212)))));
+            this.searchButton.Location = new System.Drawing.Point(1139, 976);
             this.searchButton.Name = "searchButton";
-            this.searchButton.Size = new System.Drawing.Size(132, 77);
+            this.searchButton.Size = new System.Drawing.Size(189, 93);
             this.searchButton.TabIndex = 18;
             this.searchButton.Text = "Search";
-            this.searchButton.UseVisualStyleBackColor = true;
+            this.searchButton.UseVisualStyleBackColor = false;
             // 
             // deleteButton
             // 
-            this.deleteButton.Location = new System.Drawing.Point(1609, 976);
+            this.deleteButton.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(116)))), ((int)(((byte)(141)))), ((int)(((byte)(146)))));
+            this.deleteButton.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.deleteButton.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(211)))), ((int)(((byte)(217)))), ((int)(((byte)(212)))));
+            this.deleteButton.Location = new System.Drawing.Point(1560, 976);
             this.deleteButton.Name = "deleteButton";
-            this.deleteButton.Size = new System.Drawing.Size(132, 77);
+            this.deleteButton.Size = new System.Drawing.Size(189, 93);
             this.deleteButton.TabIndex = 19;
             this.deleteButton.Text = "Delete";
-            this.deleteButton.UseVisualStyleBackColor = true;
+            this.deleteButton.UseVisualStyleBackColor = false;
             this.deleteButton.Click += new System.EventHandler(this.deleteButton_Click);
             // 
             // panel1
             // 
-            this.panel1.BackColor = System.Drawing.Color.WhiteSmoke;
+            this.panel1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(116)))), ((int)(((byte)(141)))), ((int)(((byte)(146)))));
             this.panel1.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
             this.panel1.Controls.Add(this.ratingNumericUpDown);
             this.panel1.Controls.Add(this.beenThereCheckBox);
@@ -291,6 +340,7 @@
             // 
             // ratingNumericUpDown
             // 
+            this.ratingNumericUpDown.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(211)))), ((int)(((byte)(217)))), ((int)(((byte)(212)))));
             this.ratingNumericUpDown.Location = new System.Drawing.Point(277, 710);
             this.ratingNumericUpDown.Maximum = new decimal(new int[] {
             5,
@@ -304,41 +354,38 @@
             // beenThereCheckBox
             // 
             this.beenThereCheckBox.AutoSize = true;
+            this.beenThereCheckBox.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(116)))), ((int)(((byte)(141)))), ((int)(((byte)(146)))));
+            this.beenThereCheckBox.ForeColor = System.Drawing.Color.Transparent;
             this.beenThereCheckBox.Location = new System.Drawing.Point(277, 609);
             this.beenThereCheckBox.Name = "beenThereCheckBox";
             this.beenThereCheckBox.Size = new System.Drawing.Size(28, 27);
             this.beenThereCheckBox.TabIndex = 19;
-            this.beenThereCheckBox.UseVisualStyleBackColor = true;
+            this.beenThereCheckBox.UseVisualStyleBackColor = false;
             // 
             // label8
             // 
             this.label8.AutoSize = true;
             this.label8.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F);
+            this.label8.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(211)))), ((int)(((byte)(217)))), ((int)(((byte)(212)))));
             this.label8.Location = new System.Drawing.Point(3, 147);
             this.label8.Name = "label8";
             this.label8.Size = new System.Drawing.Size(268, 37);
             this.label8.TabIndex = 18;
             this.label8.Text = "Restaurant Name";
             // 
-            // saveButton
-            // 
-            this.saveButton.Location = new System.Drawing.Point(0, 0);
-            this.saveButton.Name = "saveButton";
-            this.saveButton.Size = new System.Drawing.Size(75, 23);
-            this.saveButton.TabIndex = 0;
-            // 
             // Form1
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(12F, 25F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.BackColor = System.Drawing.Color.WhiteSmoke;
+            this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(211)))), ((int)(((byte)(217)))), ((int)(((byte)(212)))));
             this.ClientSize = new System.Drawing.Size(2179, 1092);
-            this.Controls.Add(this.saveButton);
             this.Controls.Add(this.panel1);
             this.Controls.Add(this.deleteButton);
             this.Controls.Add(this.searchButton);
             this.Controls.Add(this.label2);
             this.Controls.Add(this.dataGridView1);
+            this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.FixedDialog;
+            this.HelpButton = true;
             this.Name = "Form1";
             this.Text = "Restaurant Tracker";
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).EndInit();
@@ -371,7 +418,6 @@
         private System.Windows.Forms.Label label8;
         private System.Windows.Forms.CheckBox beenThereCheckBox;
         private System.Windows.Forms.NumericUpDown ratingNumericUpDown;
-        private System.Windows.Forms.Button saveButton;
     }
 }
 
